@@ -1,7 +1,28 @@
-let carbon = require('./carbon-dating.js')
+let team = require('./dream-team.js')
 
-console.log(carbon('hello'))
-console.log(carbon('11.3231.3213124'))
-console.log(carbon('0'))
-console.log(carbon('8.738732722522064'))
-console.log(carbon(''))
+function deleteAllSpaces(str) {
+    while (str.includes(' '))
+        str = str.replace(' ', '')
+
+    return str
+}
+
+console.log(deleteAllSpaces('            b     sdfsd '))
+
+
+console.log(Number.isFinite(parseInt('1243.2342.234fgdgdfgd')))
+console.log(Number.isFinite(parseInt(1243.2342)))
+console.log(Number.isFinite(parseInt(1243)))
+console.log(Number.isFinite(parseInt('1243')))
+console.log(Number.isFinite(parseInt('name')))
+console.log(Number.isFinite(parseInt('')))
+console.log(Number.isFinite(parseFloat('1243.2342.234dfgdfgfdg')))
+console.log(Number.isFinite(parseFloat(1243.2342)))
+console.log(Number.isFinite(parseFloat(1243)))
+console.log(Number.isFinite(parseFloat('1243')))
+console.log(Number.isFinite(parseFloat('name')))
+console.log(typeof ['Matt', 'Ann', 'Dmitry', 'Max'])
+
+console.log(team(['Matt', 'Ann', ' ', 'Max']))
+console.log(team(['Olivia', 1111, 'Lily', 'Oscar', true, null]))
+console.log(team('sddfsd'))
