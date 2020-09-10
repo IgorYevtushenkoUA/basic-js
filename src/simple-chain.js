@@ -21,7 +21,7 @@ const chainMaker = {
             this.deleteChain()
             throw new Error
         }
-        this.chainDate.slice(position-1,1)
+        this.chainDate.splice(position-1,1)
         return this
     },
     reverseChain() {
