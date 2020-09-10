@@ -1,28 +1,16 @@
-let team = require('./dream-team.js')
-
-function deleteAllSpaces(str) {
-    while (str.includes(' '))
-        str = str.replace(' ', '')
-
-    return str
-}
-
-console.log(deleteAllSpaces('            b     sdfsd '))
+let weather = require('./what-season.js')
 
 
-console.log(Number.isFinite(parseInt('1243.2342.234fgdgdfgd')))
-console.log(Number.isFinite(parseInt(1243.2342)))
-console.log(Number.isFinite(parseInt(1243)))
-console.log(Number.isFinite(parseInt('1243')))
-console.log(Number.isFinite(parseInt('name')))
-console.log(Number.isFinite(parseInt('')))
-console.log(Number.isFinite(parseFloat('1243.2342.234dfgdfgfdg')))
-console.log(Number.isFinite(parseFloat(1243.2342)))
-console.log(Number.isFinite(parseFloat(1243)))
-console.log(Number.isFinite(parseFloat('1243')))
-console.log(Number.isFinite(parseFloat('name')))
-console.log(typeof ['Matt', 'Ann', 'Dmitry', 'Max'])
+const date1 = new Date('December 17, 1995 03:24:00');
+const date = new Date(98, 1);
+console.log(weather(new Date('Thu Sep 10 2020 11:23:49 GMT+0300 (GMT+03:00)')))
+console.log(weather(date1))
+console.log(weather(date))
+console.log(weather(date1))
+console.log(weather('foo'));;
+console.log(weather({John: 'Smith'}));;
+console.log(weather(20192701));;
+console.log(weather([2019, '27', 0 + '1']));;
+console.log(weather(() => new Date()));;
 
-console.log(team(['Matt', 'Ann', ' ', 'Max']))
-console.log(team(['Olivia', 1111, 'Lily', 'Oscar', true, null]))
-console.log(team('sddfsd'))
+
