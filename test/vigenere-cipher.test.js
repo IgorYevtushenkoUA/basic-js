@@ -88,7 +88,9 @@ describe('Vigenere cipher', () => {
                 const testStr = createTestString(i);
                 const reversedTestStr = testStr.split('').reverse().join('');
                 const testKey = createTestKey(i - i % 2);
+                console.log(`reversedTestStr = ${reversedTestStr}\ntestKey = ${testKey}`)
                 const encrypted = reverseMachine.encrypt(reversedTestStr, testKey);
+                console.log(`reversedTestStr = ${reversedTestStr}\ntestKey = ${testKey}`)
                 const reversedEncrypted = encrypted.split('').reverse().join('');
                 assert.equal(reverseMachine.decrypt(reversedEncrypted, testKey), testStr);
             }

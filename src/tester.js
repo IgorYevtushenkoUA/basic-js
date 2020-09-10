@@ -1,2 +1,5 @@
-let repeater = require('./extended-repeater.js')
-console.log(repeater('TESTstr', { repeatTimes: undefined, separator: 'ds', addition: 'ADD!', additionRepeatTimes: undefined, additionSeparator: ')))000' }));
+let cipher = require('./vigenere-cipher.js')
+console.log(String.fromCharCode(78))
+let encrypt =cipher.prototype.encrypt('attack at dawn!', 'alphonse')
+console.log(encrypt)
+console.log(cipher.prototype.decrypt(encrypt, 'alphonse'))
