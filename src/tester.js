@@ -1,10 +1,7 @@
-let hanoi = require('./hanoi-tower.js')
+let arr = require('./transform-array.js')
 
-console.log(hanoi(5, 4074));
-console.log(hanoi(38, 4594));
-console.log(hanoi(34, 4005));
-console.log(hanoi(19, 4770));
-console.log(hanoi(23, 4344));
-console.log(hanoi(9, 4347));
-console.log(hanoi(44, 4685));
+console.log(arr(['--discard-prev', 1, 2, 3]));
+console.log(arr([1, 2, 3, '--double-next', 1337, '--double-prev', 4, 5]));
+// console.log(arr([1, 2, 3, '--discard-next', 1337, '--discard-prev', 4, 5]));
+// console.log(arr([1, 2, 3, '--double-next', 1337, '--discard-prev', 4, 5]));
 
